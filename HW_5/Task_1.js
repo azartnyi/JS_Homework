@@ -21,10 +21,10 @@ for (let i = 10; i >= 0; i--) {
 // ;   :):):):)
 // ;   :):):):):)
 
-const SMILE = ':)';
+const smile = ':)';
 let smileBufer = '';
 for (let i = 0; i < 5; i++) {
-    smileBufer = smileBufer + SMILE;
+    smileBufer = smileBufer + smile;
   console.log(smileBufer);
 }
 
