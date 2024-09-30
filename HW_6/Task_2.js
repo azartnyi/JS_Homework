@@ -22,8 +22,4 @@ for (pizzaCount of myPizzas) {
     }
 }
 
-if (uniqPizza.length === 0) {
-    console.log(null);
-} else {
-    console.log(uniqPizza);
-}
+ uniqPizza.length ? uniqPizza : null
