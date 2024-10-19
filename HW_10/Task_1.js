@@ -52,7 +52,7 @@ console.log(applyAnotherQA);
 function createCounter(){
     let count = 0;
 
-    return function newFunction()
+    return () =>
     {
         ++count;
         console.log(`Function was called ${count} times`);
