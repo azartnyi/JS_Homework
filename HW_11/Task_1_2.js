@@ -130,11 +130,10 @@ class Company {
     }
 
     addEmployee(employee) {
-    if (employee instanceof Employee) {
+    if (!(employee instanceof Employee)) {
+      throw new Error("Объект не находится в классе Employee");
+    } 
     this.#employees.push(employee)
-    } else {
-    throw new Error("Объект не находится в классе Employee");
-    }
     }
 
     getEmployees() {
