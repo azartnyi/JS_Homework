@@ -86,7 +86,7 @@ class Employee {
     }
 
     set firstName(firstName) {
-        return this._firstName = firstName;
+       this._firstName = firstName;
     }
     set lastName(lastName) {
         return this._lastName = lastName;
