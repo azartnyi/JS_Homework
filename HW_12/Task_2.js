@@ -33,7 +33,7 @@ async function createTodo(params) {
 
         return responseData;
     } catch (error) {
-        console.error('Error:', error.message);
+        console.error(`Error: ${error.message}, reason: ${error.cause});
     } finally {
         console.log('Работа функции завершена');
     }
