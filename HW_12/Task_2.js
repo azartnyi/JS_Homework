@@ -17,7 +17,7 @@ async function createTodo(params) {
         });
 
         if (response.status !== 201) {
-            throw new Error('Failed to create todo. Error code: ' + response.status);
+            throw new Error('Failed to create todo. Error code: ' + response.status, { cause: response.statusText });
         }
 
 
