@@ -44,7 +44,7 @@ type readonlyEmployee = Readonly<IEmployee>;
 
 // 9. Создайте объект с помощью Record, в ключах которого будут строки, а в значениях - ключи объекта QA (Используйте Record, keyof, typeof)
 
-const recordObject: Record<string, keyof typeof QA> = {
+const recordObject: Record<string, qaKeys> = {
   firstKey: "name",
   secondKey: "salary",
   thirdKey: "isManager",
